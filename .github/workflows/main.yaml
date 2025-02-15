@@ -17,7 +17,7 @@ jobs:
       run: |
         # Configurar Surge.sh
         npm install --global surge
-        surge token e104cda167792ad99dd833b8311fa98a
+        surge token ${{ secrets.SURGE_TOKEN }}
 
         # Desplegar en Surge.sh
         surge --project ./ --domain Pruebas_Electiva2-Parcial-02.surge.sh
